@@ -9,10 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-		VStack {
-			Text("Item 1")
-			Text("Item 2")
-			Text("Item 3")
+		VStack{
+			Text("I love list").font(.headline)
+			List {
+				Text("Item 1")
+				Text("Item 2")
+				Text("Item 3")
+			}
+			.listStyle(InsetGroupedListStyle())
 		}
     }
 }
